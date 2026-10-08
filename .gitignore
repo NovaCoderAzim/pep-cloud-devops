@@ -1,0 +1,21 @@
+# Terraform
+terraform/.terraform/
+terraform/*.tfstate
+terraform/*.tfstate.*
+terraform/crash.log
+terraform/*.tfvars
+terraform/*.tfvars.json
+
+# SSH/private keys
+*.pem
+*.key
+id_rsa
+id_rsa.pub
+
+# Environment/secrets
+.env
+.env.*
+
+# OS
+.DS_Store
+Thumbs.db
