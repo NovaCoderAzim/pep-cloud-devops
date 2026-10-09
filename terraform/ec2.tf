@@ -57,7 +57,7 @@ resource "aws_security_group" "ec2" {
 }
 resource "aws_key_pair" "pep_devops" {
   key_name   = "pep-devops-key"
-  public_key = file(pathexpand("~/.ssh/pep-devops-key.pub"))
+  public_key = file("${path.module}/pep-devops-key.pub")
 }
 
 resource "aws_instance" "ec2_1" {
